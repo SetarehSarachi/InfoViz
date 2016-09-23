@@ -24,6 +24,7 @@ text {
 
 </style>
     <head>
+      <h1> United States Education Attainment for High school<h1>
         <meta charset="utf-8">
         <script src="d3.geomap.dependencies.min.js"></script>
         <script src="d3.geomap.min.js"></script>
@@ -31,12 +32,12 @@ text {
         var map = d3.geomap.choropleth()
             .geofile('USA.json')
             .projection(d3.geo.albersUsa)
-            .column('value')
+            .column('2000')
             .unitId('fips')
             .scale(1000)
             .legend(true);
 
-        d3.csv('map.csv', function(error, data) {
+        d3.csv('highschool.csv', function(error, data) {
             d3.select('#map')
                 .datum(data)
                 .call(map.draw, map);
