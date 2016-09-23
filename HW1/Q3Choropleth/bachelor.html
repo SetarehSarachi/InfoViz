@@ -1,0 +1,51 @@
+<html>
+<style>
+text {
+  fill: #333;
+  font-size: 12px; }
+
+.background {
+  fill: none;
+  pointer-events: all; }
+
+.unit {
+  cursor: pointer;
+  fill: #ccc;
+  stroke: #000;
+  stroke-width: 0.4px; }
+
+.legend-bg {
+  fill: #fff;
+  fill-opacity: 0.8; }
+
+.legend-bar {
+  stroke: #333;
+  stroke-width: 1px; }
+
+</style>
+    <head>
+      <h1> United States Education Attainment for High school<h1>
+        <meta charset="utf-8">
+        <script src="d3.geomap.dependencies.min.js"></script>
+        <script src="d3.geomap.min.js"></script>
+        <script>
+        var map = d3.geomap.choropleth()
+            .geofile('USA.json')
+            .projection(d3.geo.albersUsa)
+            .column('2000')
+            .unitId('fips')
+            .scale(1000)
+            .legend(true);
+
+        d3.csv('bachelorgrad.csv', function(error, data) {
+            d3.select('#map')
+                .datum(data)
+                .call(map.draw, map);
+        });
+        </script>
+
+    </head>
+    <body>
+        <div id="map"></div>
+    </body>
+</html>
