@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<head>  <div id="title">
+    <p> Educational Attainment for United States population : 1990 to 2009</p>
+  </div>
+</head>
 <style>
 
 /*.axis--x path {
@@ -12,11 +16,18 @@
   stroke: steelblue;
   stroke-width: 1.5px;
 }
+#title{
+  float: none;
+  font-size: 19px;
+  margin-top: 2%;
+  margin-bottom: -16px;
+  margin-left: 16%;
+}
 
 </style>
 <svg width="960" height="500"></svg>
 <script src="//d3js.org/d3.v4.min.js"></script>
-<script src="json2.js"></script>
+<!-- <script src="json2.js"></script> -->
 <script>
 
 var svg = d3.select("svg"),
@@ -47,7 +58,7 @@ d3.tsv("timeseries.tsv", type, function(error, data) {
       })
     };
   });
-  
+
 
  var min = d3.min(data, function(d) { return d.year; });
  var max = d3.max(data, function(d){return d.year;});
@@ -58,7 +69,7 @@ d3.tsv("timeseries.tsv", type, function(error, data) {
     d3.min(categories, function(c) { return 0; }),
     d3.max(categories, function(c) { return d3.max(c.values, function(d) { return d.eduData; }); })
   ]);*/
-  
+
   y.domain([0,100]);
 
   z.domain(categories.map(function(c) { return c.id; }));
@@ -98,30 +109,30 @@ d3.tsv("timeseries.tsv", type, function(error, data) {
       .style("font", "10px sans-serif")
       .text(function(d) { return d.id; });
 
-	  
- 
-	 svg.append("text")
-        .attr("x", (width/1.5))             
-        .attr("y", (margin.top))
-        .attr("text-anchor", "middle")  
-        .style("font-size", "16px") 
-        .style("text-decoration", "underline")  
-        .text("Time Series Graph EduData");
-	 
+
+
+	//  svg.append("text")
+  //       .attr("x", (width/1.5))
+  //       .attr("y", (margin.top))
+  //       .attr("text-anchor", "middle")
+  //       .style("font-size", "16px")
+  //       .style("text-decoration", "underline")
+  //       .text("Time Series Graph EduData");
+
 	 var points = [{"year":2000,"value":24.4},{"year":2000,"value":8.9},{"year":2000,"value":80.4},
 					{"year":1990,"value":75.2},{"year":1990,"value":20.3},{"year":1990,"value":7.2},
-					{"year":2009,"value":85.3},{"year":2009,"value":27.9},{"year":2009,"value":10.3}	 
+					{"year":2009,"value":85.3},{"year":2009,"value":27.9},{"year":2009,"value":10.3}
 					];
-	 
-	 
+
+
 	 var tooltip = d3.select("body")
     .append("div")
     .style("position", "absolute")
     .style("z-index", "10")
     .style("visibility", "hidden")
     .text("a simple tooltip");
-	 
-		 
+
+
 	 var circles = svg.selectAll("circle").data(points).enter().append("circle").attr("stroke", "black").attr("fill", function(d) { return "black" })
 						.attr("cx", function(d){ return (x(parseTime(d.year)) + margin.left)})
 						.attr("cy", function(d){ return (y(d.value) + margin.top)})
@@ -129,7 +140,7 @@ d3.tsv("timeseries.tsv", type, function(error, data) {
 						.on("mouseover", function(){return tooltip.style("visibility", "visible");})
 						.on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
 						.on("mouseout", function(){return tooltip.style("visibility", "hidden");});
-	 
+
 });
 
 function type(d, _, columns) {
