@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <head>  <div id="title">
-    <p> Educational Attainment for United States population : 1990 to 2009</p>
+    <p> Educational Attainment for United States population in Percent : 1990 to 2009</p>
   </div>
 </head>
 <style>
@@ -21,7 +21,7 @@
   font-size: 19px;
   margin-top: 2%;
   margin-bottom: -16px;
-  margin-left: 16%;
+  margin-left: 11%;
 }
 
 </style>
@@ -77,7 +77,14 @@ d3.tsv("timeseries.tsv", type, function(error, data) {
   g.append("g")
       .attr("class", "axis axis--x")
       .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x).ticks(20));
+      .call(d3.axisBottom(x).ticks(20))
+      .append("text")
+      .attr("transform", " ")
+      .attr("x", 6)
+      .attr("dx", "73.71em")
+      .attr("dy","-0.6em")
+      .attr("fill", "#000")
+      .text("Year"," ");
 
   g.append("g")
       .attr("class", "axis axis--y")
