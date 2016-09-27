@@ -1,5 +1,8 @@
 <html>
 <style>
+.ui-content{
+  height: 60px;
+}
 text {
   fill: #333;
   font-size: 12px; }
@@ -16,48 +19,81 @@ text {
 
 .legend-bg {
   fill: #fff;
-  fill-opacity: 0.8;
-}
+  fill-opacity: 0.8; }
 
 .legend-bar {
   stroke: #333;
   stroke-width: 1px; }
 
-  #title {
-    float: none;
-    font-size: 25px;
-    margin-top: 2%;
-    margin-bottom : -95px;
-    margin-left: 11%;
-  }
-
 </style>
     <head>
-        <div id="title">
-          <p> Educational Attainment for United States population with a High School degree or more : 2000 to 2009</p>
-        </div>
+      <h1> United States Education Attainment for High school</h1>
         <meta charset="utf-8">
         <script src="d3.geomap.dependencies.min.js"></script>
         <script src="d3.geomap.min.js"></script>
-        <script>
-        var map = d3.geomap.choropleth()
-            .geofile('USA.json')
-            .projection(d3.geo.albersUsa)
-            .column('2000')
-            .unitId('fips')
-            .scale(1000)
-            .legend(true)
-
-
-        d3.csv('highschoolgrad.csv', function(error, data) {
-            d3.select('#map')
-                .datum(data)
-                .call(map.draw, map);
-        });
-        </script>
+       
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
     </head>
     <body>
-        <div id="map"></div>
+      <datalist id="year">
+   <option value="2000">
+   <option value="2006">
+   <option value="2007">
+   <option value="2008">
+   <option value="2009">
+    </datalist>
+        <div data-role="main" class="ui-content">
+           
+            <label for="points">Year:</label>
+            <input type="range" name="points" id="points" min="2007" max="2009" step="1" 
+            onchange="updateMap(this.value)" value="2007">
+            
+          
+        </div>
+      </div>
+      <div id="map"></div>
     </body>
+     <script>
+
+        var geofile=d3.geomap.choropleth().geofile('USA.json');
+        var projection=geofile.projection(d3.geo.albersUsa);
+        var year=projection.column('2000');
+        var unitId=year.unitId('fips');
+        var scale=unitId.scale(1000);
+        var legend=scale.legend(true);
+        
+        
+       // var map=geofile;
+            d3.csv('highschoolgrad.csv', function(error, data) {
+            d3.select('#map')
+                .datum(data)
+                .call(geofile.draw,geofile);
+            });
+        
+         
+        function updateMap(a){
+         
+           //alert(a);
+
+        d3.select('#map').html("");
+        //d3.select('.background').remove();
+        //d3.select("body").append("div").attr("id","map");
+       var map=d3.geomap.choropleth().geofile('USA.json').projection(d3.geo.albersUsa).column(a).unitId('fips').scale(1000).legend(true);
+
+          
+            d3.csv('highschoolgrad.csv', function(error, data) {
+            d3.select('#map')
+                .datum(data)
+                .call(map.draw,map);
+            });
+          
+            
+        }
+
+
+        </script>
+
 </html>
