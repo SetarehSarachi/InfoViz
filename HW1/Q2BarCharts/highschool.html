@@ -32,12 +32,22 @@ body {
   stroke: black;
 }
 
+#title {
+  float: none;
+  font-size: 25px;
+  margin-top: 2%;
+  margin-bottom : -95px;
+  margin-left: 7%;
+}
 </style>
 <body>
+  <div id="title">
+    <p> Educational Attainment for US states' population with a high school degree or more : 2009 </p>
+  </div>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
-var m = [30, 30, 30, 90],
+var m = [130, 30, 30, 90],
     w = 1250- m[1] - m[3],
     h = 930 - m[0] - m[2];
 
