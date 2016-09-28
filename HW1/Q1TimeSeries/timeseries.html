@@ -136,18 +136,20 @@ d3.tsv("timeseries.tsv", type, function(error, data) {
     .append("div")
     .style("position", "absolute")
     .style("z-index", "10")
-    .style("visibility", "hidden")
-    .text("a simple tooltip");
+    .style("visibility", "hidden");
+
 
 
 	 var circles = svg.selectAll("circle").data(points).enter().append("circle").attr("stroke", "black").attr("fill", function(d) { return "black" })
 						.attr("cx", function(d){ return (x(parseTime(d.year)) + margin.left)})
 						.attr("cy", function(d){ return (y(d.value) + margin.top)})
 						.attr("r", function(d) { return 3 })
-						.on("mouseover", function(){return tooltip.style("visibility", "visible");})
+						.on("mouseover", function(d){return tooltip.text("Year : "+d.year+" Value : "+d.value).style("visibility", "visible");})
 						.on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
 						.on("mouseout", function(){return tooltip.style("visibility", "hidden");});
 
+						
+							//.on("mouseover", function(){return tooltip.text("Year : "+d.year+" Value : "+d.value);})
 });
 
 function type(d, _, columns) {
