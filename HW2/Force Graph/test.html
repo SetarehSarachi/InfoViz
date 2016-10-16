@@ -13,7 +13,7 @@
 }
 
 </style>
-<svg width="1400" height="1300"></svg>
+<svg width="2000" height="1300"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
@@ -25,7 +25,7 @@ var color = d3.scaleOrdinal(d3.schemeCategory10);
 
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }))
-    .force("charge", d3.forceManyBody().strength(-100))
+    .force("charge", d3.forceManyBody().strength(-120))
     .force("center", d3.forceCenter(width /4, height /2));
 
 d3.json("polbooks.json", function(error, graph) {
@@ -47,12 +47,14 @@ d3.json("polbooks.json", function(error, graph) {
 
   var node = gnodes.append("circle")
           .attr("class", "node")
-          .attr("r", function(d) { return Math.sqrt(d.Degree*5); })
+          .attr("r", function(d) { return Math.sqrt(d.Degree*8); })
           .attr("fill", function(d) { return color(d.Class); })
-          .call(d3.drag()
-              .on("start", dragstarted)
-              .on("drag", dragged)
-              .on("end", dragended));
+          //NEEDED FOR INTERACTIVE DRAGGING OF NODES
+          //.call(d3.drag()
+          //     .on("start", dragstarted)
+          //     .on("drag", dragged)
+          //     .on("end", dragended))
+          ;
 
   var labels = gnodes.append("text")
             .text(function(d) { return d.Label; })
@@ -93,22 +95,22 @@ d3.json("polbooks.json", function(error, graph) {
    }
 
 });
-
-function dragstarted(d) {
-  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-  d.fx = d.x;
-  d.fy = d.y;
-}
-
-function dragged(d) {
-  d.fx = d3.event.x;
-  d.fy = d3.event.y;
-}
-
-function dragended(d) {
-  if (!d3.event.active) simulation.alphaTarget(0);
-  d.fx = null;
-  d.fy = null;
-}
+// NEEDED FOR INTERACTIVE DRAGGING OF NODES
+// function dragstarted(d) {
+//   if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+//   d.fx = d.x;
+//   d.fy = d.y;
+// }
+//
+// function dragged(d) {
+//   d.fx = d3.event.x;
+//   d.fy = d3.event.y;
+// }
+//
+// function dragended(d) {
+//   if (!d3.event.active) simulation.alphaTarget(0);
+//   d.fx = null;
+//   d.fy = null;
+// }
 
 </script>
