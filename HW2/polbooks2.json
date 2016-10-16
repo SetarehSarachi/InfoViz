@@ -4,631 +4,631 @@
     "id": "0.0",
     "Label": "1000 Years for Revenge",
     "Class": "n",
-    "Degree": 6
+    "Degree": "6"
   },
   {
     "id": "1.0",
     "Label": "Bush vs. the Beltway",
     "Class": "c",
-    "Degree": 4
+    "Degree": "4"
   },
   {
     "id": "2.0",
     "Label": "Charlie Wilson's War",
     "Class": "c",
-    "Degree": 4
+    "Degree": "4"
   },
   {
     "id": "3.0",
     "Label": "Losing Bin Laden",
     "Class": "c",
-    "Degree": 23
+    "Degree": "23"
   },
   {
     "id": "4.0",
     "Label": "Sleeping With the Devil",
     "Class": "n",
-    "Degree": 8
+    "Degree": "8"
   },
   {
     "id": "5.0",
     "Label": "The Man Who Warned America",
     "Class": "c",
-    "Degree": 7
+    "Degree": "7"
   },
   {
     "id": "6.0",
     "Label": "Why America Slept",
     "Class": "n",
-    "Degree": 11
+    "Degree": "11"
   },
   {
     "id": "7.0",
     "Label": "Ghost Wars",
     "Class": "n",
-    "Degree": 8
+    "Degree": "8"
   },
   {
     "id": "8.0",
     "Label": "A National Party No More",
     "Class": "c",
-    "Degree": 25
+    "Degree": "25"
   },
   {
     "id": "9.0",
     "Label": "Bush Country",
     "Class": "c",
-    "Degree": 16
+    "Degree": "16"
   },
   {
     "id": "10.0",
     "Label": "Dereliction of Duty",
     "Class": "c",
-    "Degree": 15
+    "Degree": "15"
   },
   {
     "id": "11.0",
     "Label": "Legacy",
     "Class": "c",
-    "Degree": 18
+    "Degree": "18"
   },
   {
     "id": "12.0",
     "Label": "Off with Their Heads",
     "Class": "c",
-    "Degree": 25
+    "Degree": "25"
   },
   {
     "id": "13.0",
     "Label": "Persecution",
     "Class": "c",
-    "Degree": 13
+    "Degree": "13"
   },
   {
     "id": "14.0",
     "Label": "Rumsfeld's War",
     "Class": "c",
-    "Degree": 9
+    "Degree": "9"
   },
   {
     "id": "15.0",
     "Label": "Breakdown",
     "Class": "c",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "16.0",
     "Label": "Betrayal",
     "Class": "c",
-    "Degree": 3
+    "Degree": "3"
   },
   {
     "id": "17.0",
     "Label": "Shut Up and Sing",
     "Class": "c",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "18.0",
     "Label": "Meant To Be",
     "Class": "n",
-    "Degree": 3
+    "Degree": "3"
   },
   {
     "id": "19.0",
     "Label": "The Right Man",
     "Class": "c",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "20.0",
     "Label": "Ten Minutes from Normal",
     "Class": "c",
-    "Degree": 10
+    "Degree": "10"
   },
   {
     "id": "21.0",
     "Label": "Hillary's Scheme",
     "Class": "c",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "22.0",
     "Label": "The French Betrayal of America",
     "Class": "c",
-    "Degree": 7
+    "Degree": "7"
   },
   {
     "id": "23.0",
     "Label": "Tales from the Left Coast",
     "Class": "c",
-    "Degree": 9
+    "Degree": "9"
   },
   {
     "id": "24.0",
     "Label": "Hating America",
     "Class": "c",
-    "Degree": 9
+    "Degree": "9"
   },
   {
     "id": "25.0",
     "Label": "The Third Terrorist",
     "Class": "c",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "26.0",
     "Label": "Endgame",
     "Class": "c",
-    "Degree": 9
+    "Degree": "9"
   },
   {
     "id": "27.0",
     "Label": "Spin Sisters",
     "Class": "c",
-    "Degree": 9
+    "Degree": "9"
   },
   {
     "id": "28.0",
     "Label": "All the Shah's Men",
     "Class": "n",
-    "Degree": 3
+    "Degree": "3"
   },
   {
     "id": "29.0",
     "Label": "Dangerous Dimplomacy",
     "Class": "c",
-    "Degree": 4
+    "Degree": "4"
   },
   {
     "id": "30.0",
     "Label": "The Price of Loyalty",
     "Class": "l",
-    "Degree": 20
+    "Degree": "20"
   },
   {
     "id": "31.0",
     "Label": "House of Bush, House of Saud",
     "Class": "l",
-    "Degree": 11
+    "Degree": "11"
   },
   {
     "id": "32.0",
     "Label": "The Death of Right and Wrong",
     "Class": "c",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "33.0",
     "Label": "Useful idiots",
     "Class": "c",
-    "Degree": 9
+    "Degree": "9"
   },
   {
     "id": "34.0",
     "Label": "The O'Reilly Factor",
     "Class": "c",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "35.0",
     "Label": "Let Freedom Ring",
     "Class": "c",
-    "Degree": 10
+    "Degree": "10"
   },
   {
     "id": "36.0",
     "Label": "Those Who Trespass",
     "Class": "c",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "37.0",
     "Label": "Bias",
     "Class": "c",
-    "Degree": 7
+    "Degree": "7"
   },
   {
     "id": "38.0",
     "Label": "Slander",
     "Class": "c",
-    "Degree": 7
+    "Degree": "7"
   },
   {
     "id": "39.0",
     "Label": "The Savage Nation",
     "Class": "c",
-    "Degree": 8
+    "Degree": "8"
   },
   {
     "id": "40.0",
     "Label": "Deliver Us from Evil",
     "Class": "c",
-    "Degree": 18
+    "Degree": "18"
   },
   {
     "id": "41.0",
     "Label": "Give Me a Break",
     "Class": "c",
-    "Degree": 8
+    "Degree": "8"
   },
   {
     "id": "42.0",
     "Label": "The Enemy Within",
     "Class": "c",
-    "Degree": 6
+    "Degree": "6"
   },
   {
     "id": "43.0",
     "Label": "The Real America",
     "Class": "c",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "44.0",
     "Label": "Who's Looking Out for You?",
     "Class": "c",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "45.0",
     "Label": "The Official Handbook Vast Right Wing Conspiracy",
     "Class": "c",
-    "Degree": 6
+    "Degree": "6"
   },
   {
     "id": "46.0",
     "Label": "Power Plays",
     "Class": "n",
-    "Degree": 4
+    "Degree": "4"
   },
   {
     "id": "47.0",
     "Label": "Arrogance",
     "Class": "c",
-    "Degree": 18
+    "Degree": "18"
   },
   {
     "id": "48.0",
     "Label": "The Perfect Wife",
     "Class": "n",
-    "Degree": 4
+    "Degree": "4"
   },
   {
     "id": "49.0",
     "Label": "The Bushes",
     "Class": "c",
-    "Degree": 8
+    "Degree": "8"
   },
   {
     "id": "50.0",
     "Label": "Things Worth Fighting For",
     "Class": "c",
-    "Degree": 3
+    "Degree": "3"
   },
   {
     "id": "51.0",
     "Label": "Surprise, Security, the American Experience",
     "Class": "n",
-    "Degree": 6
+    "Degree": "6"
   },
   {
     "id": "52.0",
     "Label": "Allies",
     "Class": "c",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "53.0",
     "Label": "Why Courage Matters",
     "Class": "c",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "54.0",
     "Label": "Hollywood Interrupted",
     "Class": "c",
-    "Degree": 6
+    "Degree": "6"
   },
   {
     "id": "55.0",
     "Label": "Fighting Back",
     "Class": "c",
-    "Degree": 4
+    "Degree": "4"
   },
   {
     "id": "56.0",
     "Label": "We Will Prevail",
     "Class": "c",
-    "Degree": 4
+    "Degree": "4"
   },
   {
     "id": "57.0",
     "Label": "The Faith of George W Bush",
     "Class": "c",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "58.0",
     "Label": "Rise of the Vulcans",
     "Class": "c",
-    "Degree": 13
+    "Degree": "13"
   },
   {
     "id": "59.0",
     "Label": "Downsize This!",
     "Class": "l",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "60.0",
     "Label": "Stupid White Men",
     "Class": "l",
-    "Degree": 6
+    "Degree": "6"
   },
   {
     "id": "61.0",
     "Label": "Rush Limbaugh Is a Big Fat idiot",
     "Class": "l",
-    "Degree": 4
+    "Degree": "4"
   },
   {
     "id": "62.0",
     "Label": "The Best Democracy Money Can Buy",
     "Class": "l",
-    "Degree": 6
+    "Degree": "6"
   },
   {
     "id": "63.0",
     "Label": "The Culture of Fear",
     "Class": "l",
-    "Degree": 4
+    "Degree": "4"
   },
   {
     "id": "64.0",
     "Label": "America Unbound",
     "Class": "l",
-    "Degree": 9
+    "Degree": "9"
   },
   {
     "id": "65.0",
     "Label": "The Choice",
     "Class": "l",
-    "Degree": 7
+    "Degree": "7"
   },
   {
     "id": "66.0",
     "Label": "The Great Unraveling",
     "Class": "l",
-    "Degree": 21
+    "Degree": "21"
   },
   {
     "id": "67.0",
     "Label": "Rogue Nation",
     "Class": "l",
-    "Degree": 6
+    "Degree": "6"
   },
   {
     "id": "68.0",
     "Label": "Soft Power",
     "Class": "l",
-    "Degree": 4
+    "Degree": "4"
   },
   {
     "id": "69.0",
     "Label": "Colossus",
     "Class": "n",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "70.0",
     "Label": "The Sorrows of Empire",
     "Class": "l",
-    "Degree": 7
+    "Degree": "7"
   },
   {
     "id": "71.0",
     "Label": "Against All Enemies",
     "Class": "l",
-    "Degree": 15
+    "Degree": "15"
   },
   {
     "id": "72.0",
     "Label": "American Dynasty",
     "Class": "l",
-    "Degree": 22
+    "Degree": "22"
   },
   {
     "id": "73.0",
     "Label": "Big Lies",
     "Class": "l",
-    "Degree": 21
+    "Degree": "21"
   },
   {
     "id": "74.0",
     "Label": "The Lies of George W. Bush",
     "Class": "l",
-    "Degree": 16
+    "Degree": "16"
   },
   {
     "id": "75.0",
     "Label": "Worse Than Watergate",
     "Class": "l",
-    "Degree": 16
+    "Degree": "16"
   },
   {
     "id": "76.0",
     "Label": "Plan of Attack",
     "Class": "n",
-    "Degree": 13
+    "Degree": "13"
   },
   {
     "id": "77.0",
     "Label": "Bush at War",
     "Class": "c",
-    "Degree": 7
+    "Degree": "7"
   },
   {
     "id": "78.0",
     "Label": "The New Pearl Harbor",
     "Class": "l",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "79.0",
     "Label": "Bushwomen",
     "Class": "l",
-    "Degree": 8
+    "Degree": "8"
   },
   {
     "id": "80.0",
     "Label": "The Bubble of American Supremacy",
     "Class": "l",
-    "Degree": 4
+    "Degree": "4"
   },
   {
     "id": "81.0",
     "Label": "Living History",
     "Class": "l",
-    "Degree": 4
+    "Degree": "4"
   },
   {
     "id": "82.0",
     "Label": "The Politics of Truth",
     "Class": "l",
-    "Degree": 9
+    "Degree": "9"
   },
   {
     "id": "83.0",
     "Label": "Fanatics and Fools",
     "Class": "l",
-    "Degree": 8
+    "Degree": "8"
   },
   {
     "id": "84.0",
     "Label": "Bushwhacked",
     "Class": "l",
-    "Degree": 23
+    "Degree": "23"
   },
   {
     "id": "85.0",
     "Label": "Disarming Iraq",
     "Class": "l",
-    "Degree": 5
+    "Degree": "5"
   },
   {
     "id": "86.0",
     "Label": "Lies and the Lying Liars Who Tell Them",
     "Class": "l",
-    "Degree": 14
+    "Degree": "14"
   },
   {
     "id": "87.0",
     "Label": "MoveOn's 50 Ways to Love Your Country",
     "Class": "l",
-    "Degree":  5
+    "Degree": "5"
   },
   {
     "id": "88.0",
     "Label": "The Buying of the President 2004",
     "Class": "l",
-    "Degree":  5
+    "Degree": "5"
   },
   {
     "id": "89.0",
     "Label": "Perfectly Legal",
     "Class": "l",
-    "Degree":  6
+    "Degree": "6"
   },
   {
     "id": "90.0",
     "Label": "Hegemony or Survival",
     "Class": "l",
-    "Degree":  5
+    "Degree": "5"
   },
   {
     "id": "91.0",
     "Label": "The Exception to the Rulers",
     "Class": "l",
-    "Degree":  8
+    "Degree": "8"
   },
   {
     "id": "92.0",
     "Label": "Freethinkers",
     "Class": "l",
-    "Degree":  3
+    "Degree": "3"
   },
   {
     "id": "93.0",
     "Label": "Had Enough?",
     "Class": "l",
-    "Degree":  7
+    "Degree": "7"
   },
   {
     "id": "94.0",
     "Label": "It's Still the Economy, Stupid!",
     "Class": "l",
-    "Degree":  7
+    "Degree": "7"
   },
   {
     "id": "95.0",
     "Label": "We're Right They're Wrong",
     "Class": "l",
-    "Degree":  4
+    "Degree": "4"
   },
   {
     "id": "96.0",
     "Label": "What Liberal Media?",
     "Class": "l",
-    "Degree":  6
+    "Degree": "6"
   },
   {
     "id": "97.0",
     "Label": "The Clinton Wars",
     "Class": "l",
-    "Degree":  6
+    "Degree": "6"
   },
   {
     "id": "98.0",
     "Label": "Weapons of Mass Deception",
     "Class": "l",
-    "Degree":  5
+    "Degree": "5"
   },
   {
     "id": "99.0",
     "Label": "Dude, Where's My Country?",
     "Class": "l",
-    "Degree":  12
+    "Degree": "12"
   },
   {
     "id": "100.0",
     "Label": "Thieves in High Places",
     "Class": "l",
-    "Degree":  12
+    "Degree": "12"
   },
   {
     "id": "101.0",
     "Label": "Shrub",
     "Class": "l",
-    "Degree":  5
+    "Degree": "5"
   },
   {
     "id": "102.0",
     "Label": "Buck Up Suck Up",
     "Class": "l",
-    "Degree":  4
+    "Degree": "4"
   },
   {
     "id": "103.0",
     "Label": "The Future of Freedom",
     "Class": "n",
-    "Degree":  2
+    "Degree": "2"
   },
   {
     "id": "104.0",
     "Label": "Empire",
     "Class": "n",
-    "Degree":  3
+    "Degree": "3"
   }
   ],
   "links": [
