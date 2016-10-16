@@ -13,7 +13,7 @@
 }
 
 </style>
-<svg width="2300" height="1300"></svg>
+<svg width="2300" height="610"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
@@ -24,9 +24,13 @@ var svg = d3.select("svg"),
 var color = d3.scaleOrdinal(d3.schemeCategory10);
 
 var simulation = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }))
+    .force("link", d3.forceLink().id(function(d) { return d.id; }).strength(0.4))
     .force("charge", d3.forceManyBody().strength(-50))
-    .force("collide", d3.forceCollide().radius(function(d) { return 30; }))
+  //.force("collide", d3.forceCollide(30))   NO DIFFERENCE WITH THE NEXT LINE
+  .force("collide", d3.forceCollide().radius(function(d) { return 30; }))
+  //.force("collide", d3.forceCollide().radius(function(d) { return 30; }).iterations(40))
+  /*Increasing the number of iterations greatly increases the rigidity of the constraint
+  and avoids partial overlap of nodes, but also increases the runtime cost to evaluate the force.*/
     .force("center", d3.forceCenter(width /4, height /2));
   //  .force("center", d3.forceCenter(0,0));
 
