@@ -65,11 +65,7 @@ d3.json("polbooks.json", function(error, graph) {
           .attr("class", "node")
           .attr("r", function(d) { return d.Degree; })
           .attr("fill", function(d) { return color(d.Class); })
-          //NEEDED FOR INTERACTIVE DRAGGING OF NODES
-          //.call(d3.drag()
-          //     .on("start", dragstarted)
-          //     .on("drag", dragged)
-          //     .on("end", dragended))
+
           ;
 
   var labels = gnodes.append("text")
@@ -92,7 +88,6 @@ d3.json("polbooks.json", function(error, graph) {
                  .attr("x", 1020)
                  .attr("y", 30)
                  .attr("dy", ".35em")
-                 //.style("text-anchor", "end")
                  .text(function(d) {
                                       if (d=="l") {return "liberal" ;}
                                       else if (d=="n") {return "neutral";}
@@ -121,25 +116,6 @@ d3.json("polbooks.json", function(error, graph) {
    }
 
 });
-
-
-// NEEDED FOR INTERACTIVE DRAGGING OF NODES
-// function dragstarted(d) {
-//   if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-//   d.fx = d.x;
-//   d.fy = d.y;
-// }
-//
-// function dragged(d) {
-//   d.fx = d3.event.x;
-//   d.fy = d3.event.y;
-// }
-//
-// function dragended(d) {
-//   if (!d3.event.active) simulation.alphaTarget(0);
-//   d.fx = null;
-//   d.fy = null;
-// }
 
 </script>
 </body>
