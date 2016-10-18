@@ -6,7 +6,7 @@
 @import url(style.css);
 
 .background {
-  fill: #BDFF51;
+  fill: #C9FF4B;
 }
 
 line {
@@ -33,10 +33,14 @@ rect.highlight {
 }
 
 body{
-  font-size: 22px
+  font-size: 22px;
+  width: 100%;
+
 }
 
 </style>
+
+<!-- Importing libraries   -->
 <script src="http://jdfekete.github.io/reorder.js/lib/d3.v3.js"></script>
 <script src="http://jdfekete.github.io/reorder.js/lib/d3.parcoords.js"></script>
 <script src="http://jdfekete.github.io/reorder.js/lib/science.v1.js"></script>
@@ -58,8 +62,8 @@ Visualizing books about US politics using <i> Matrix graph </i>
 
 <script>
 var margin = {
-    top: 300, right: 0, bottom: 0, left: 350},
-    width = 2000,
+    top: 550, right: 100, bottom: 0, left: 550},
+    width = 3000,
     height = 2000;
 
 var x = d3.scale.ordinal().rangeBands([0, width]),
