@@ -136,7 +136,7 @@ d3.json("polbooks.json", function(error, graph) {
   function hide(){
 
 
-svg.selectAll('text').style("visibility", function(d) {
+svg.selectAll('g.gnode').selectAll('text').style("visibility", function(d) {
                 return d.Degree >=10 ? "visible" :"hidden" ;
               });
 
