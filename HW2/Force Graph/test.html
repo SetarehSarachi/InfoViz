@@ -14,8 +14,8 @@
 
   .center {
     margin-left: 300px;
-  margin-right : 200px;
-  width: 600px;
+    margin-right : 200px;
+    width: 600px;
     border: 3px solid orange;
     padding: 5px;
     height:150px;
@@ -24,11 +24,7 @@
 
 <body>
 
-<div id="option">
-      <input name="updateButton" type="button" value="Update" onclick="updateData()"/>
-</div>
-
-  <div align="center" style="font-size:20px;color:blue"> For Degree greater than or equal to 5<button style="font-size:30px;color:blue"onclick="hide()">Click Here </button></div>
+  <div align="center" style="font-size:20px;color:black"> For Degree greater than or equal to 5 <button style="font-size:20px;color:black"onclick="hide()">Click Here </button></div>
   <div class = "center">
 <h1 align = "center">
 Visualizing books about US politics using <i> Forced Directed Graph Layout </i>
@@ -36,7 +32,7 @@ Visualizing books about US politics using <i> Forced Directed Graph Layout </i>
 </h1>
 <p align="center">
   This visualization uses Forced graph layout to visualize the relation between various books ( about US politics )
-  
+
 </p>
 </div>
 
@@ -138,14 +134,14 @@ d3.json("polbooks.json", function(error, graph) {
 });
 
   function hide(){
- 
+
 
 svg.selectAll('text').style("visibility", function(d) {
                 return d.Degree >=10 ? "visible" :"hidden" ;
               });
- 
-   
+
+
 }
-  
+
 </script>
 </body>
