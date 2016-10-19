@@ -3,7 +3,6 @@
 <title>InfoViz HW-2 | Ques-2</title>
 <style>
 
-@import url(style.css);
 
 .background {
   fill: #C9FF4B;
@@ -26,8 +25,9 @@ rect.highlight {
 }
 
 .center {
-    margin: auto;
-    width: 100%;
+    margin-left: 1100px;
+	margin-right : 550px;
+	width: 2000px;
     border: 3px solid orange;
     padding: 10px;
 }
@@ -40,7 +40,7 @@ body{
 
 ul {
  display:inline;
- //list-style-type:none;
+ list-style-type:none;
  margin:2;
  text-align: center;
 }
@@ -55,9 +55,10 @@ ul {
 <script src="http://jdfekete.github.io/reorder.js/reorder.v1.js"></script>
 <script src="http://jdfekete.github.io/reorder.js/examples/matrix.js"></script>
 
+
 <div class = "center">
 
-<h1 align = center>
+<h1 align = "center">
 Visualizing books about US politics using <i> Matrix graph </i>
 
 </h1>
@@ -66,24 +67,31 @@ Visualizing books about US politics using <i> Matrix graph </i>
   <br>
   <ul>
     <li>
-      A cell is highlighted with a color if there is an edge between two books.
+     1. A cell is highlighted with a color if there is an edge between two books.
     </li>
     <li>
-      A cell is highlighted with a color if there is an edge between two books.
+     2. Select the drop down below to change the order by different Categories.
     </li>
-        <li>
-      A cell is highlighted with a color if there is an edge between two books.
+    <li>
+     3. Books with same Degree are encoded by a different colour in the grid.
     </li>
+	<li>
+		<p>Order: <select id="order">
+  <option value="name">by Name</option>
+  <option value="count">by Frequency</option>
+  <option value="group">by Cluster</option>
+</select>
+	</li>
   </ul>
 </p>
 </div>
 
-<h1 align=center>
+<h1 align="center">
 
 <script>
 var margin = {
-    top: 550, right: 100, bottom: 0, left: 550},
-    width = 3000,
+    top: 550, right: 550, bottom: 0, left: 550},
+    width = 2000,
     height = 2000;
 
 var x = d3.scale.ordinal().rangeBands([0, width]),
